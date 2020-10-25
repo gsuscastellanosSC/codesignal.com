@@ -12,6 +12,9 @@ public class Main {
 		//4). adjacentElementsProduct
 			//int inputArray[] = {-23, 4, -3, 8, -12};
 			//System.out.println(adjacentElementsProduct(inputArray));
+		//5). shapeArea
+			//System.out.println(shapeArea(7));
+		//6). Make Array Consecutive 2
 	}
 	//1). add
 	public static int add(int param1, int param2) {
@@ -43,5 +46,14 @@ public class Main {
 		}
 		return ac;
 	}
+	//5). shapeArea
+	public static int shapeArea(int n) {
+		int ac=1;
+		for (int i = 0; i < n; i++) {
+			ac=ac+4*i;
+		}
+		return ac;
+	}
+	//6). Make Array Consecutive 2
 
 }
