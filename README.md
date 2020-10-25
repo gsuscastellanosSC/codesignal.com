@@ -1,5 +1,6 @@
 # codesignal.com
 Solve exercises https://app.codesignal.com
-
-v0.0.1
-v0.0.2
+***Execute**
+    sh ~/Documents/github/settingsSites/shell/GithubSaveChanges.sh "adjacentElementsProduct" "v0.0.3"
+***Tag***
+v0.0.3
