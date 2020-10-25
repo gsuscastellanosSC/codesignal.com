@@ -17,8 +17,12 @@ public class Main {
 		//5). shapeArea
 			//System.out.println(shapeArea(7));
 		//6). Make Array Consecutive 2
-			int statues[] = {5, 4, 6};
-			System.out.println(makeArrayConsecutive2(statues)); 
+			//int statues[] = {5, 4, 6};
+			//System.out.println(makeArrayConsecutive2(statues));
+		//7). almostIncreasingSequence
+			int sequence[] = {3, 6, 5, 8, 10, 20, 15};
+			System.out.println(almostIncreasingSequence(sequence));
+			
 	}
 	//1). add
 	public static int add(int param1, int param2) {
@@ -67,6 +71,28 @@ public class Main {
 		}
 		return ac;
 	}
-	
+	//7). almostIncreasingSequence
+	public static boolean almostIncreasingSequence(int[] sequence) {
+		int aux=0;
+		int menor=-1000001;
+		boolean strictlyIncreasingSequence=true; 
+		for (int i = 0; i < sequence.length-1; i++) {
+			System.out.println(sequence[i]+"<"+sequence[i+1]);
+			if(sequence[i]<sequence[i+1] && menor<sequence[i] && aux<=1) {
+				menor=sequence[i];
+				System.out.println(menor+"<>"+sequence[i+1]);
+				aux++;
+				if(menor>sequence[i+1]) {
+				  strictlyIncreasingSequence=false;
+				  aux++;
+				}
+				
+			}else if(aux>1) {
+				strictlyIncreasingSequence=false;
+//				i=sequence.length;
+			}
+		}
+		return strictlyIncreasingSequence;
+	}
 
 }
