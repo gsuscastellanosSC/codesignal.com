@@ -1,5 +1,7 @@
 package com.codesignal;
 
+import java.util.Arrays;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,6 +17,8 @@ public class Main {
 		//5). shapeArea
 			//System.out.println(shapeArea(7));
 		//6). Make Array Consecutive 2
+			int statues[] = {5, 4, 6};
+			System.out.println(makeArrayConsecutive2(statues)); 
 	}
 	//1). add
 	public static int add(int param1, int param2) {
@@ -55,5 +59,14 @@ public class Main {
 		return ac;
 	}
 	//6). Make Array Consecutive 2
+	public static int makeArrayConsecutive2(int[] statues) {
+		Arrays.sort(statues);
+		int ac=0;
+		for (int i = 0; i < statues.length-1; i++) {
+			ac=(statues[i+1]-statues[i]>1)?ac+statues[i+1]-statues[i]-1:ac;
+		}
+		return ac;
+	}
+	
 
 }
