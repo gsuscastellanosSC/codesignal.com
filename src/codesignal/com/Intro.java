@@ -1,5 +1,6 @@
 package codesignal.com;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Intro {
@@ -95,4 +96,23 @@ public class Intro {
 		return sum;
 	}
 
+	public static String[] allLongestStrings(String[] inputArray) {
+		int ac = 0;
+		ArrayList milista = new ArrayList();
+		ArrayList milista2 = new ArrayList();
+		for (int i = 0; i < inputArray.length; i++) {
+			if (inputArray[i].length() >= ac) {
+				milista.add(inputArray[i]);
+				ac = inputArray[i].length();
+			}
+		}
+		for (int i = 0; i < milista.size(); i++) {
+			if (milista.get(i).toString().length() == ac) {
+				milista2.add(milista.get(i));
+			}
+		}
+		String[] res = new String[milista2.size()];
+		res = (String[]) milista2.toArray(res);
+		return res;
+	}
 }
