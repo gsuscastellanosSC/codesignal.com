@@ -71,8 +71,5 @@ public class Intro {
 		return ac <= 1;
 	}
 
-	public static int matrixElementsSum(int[][] matrix) {
-		System.out.println("test");
-		return 1;
-	}
+
 }

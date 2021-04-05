@@ -21,8 +21,29 @@ public class Main {
 		// int sequence[] = {1, 2, 5, 3, 5};
 		// System.out.println(Intro.almostIncreasingSequence(sequence));
 		// 8). matrixElementsSum
-		int[][] matrix = { { 1, 2 }, { 1, 3 } };
-		Intro.matrixElementsSum(matrix);
+		int[][] matrix = { { 1, 1, 1, 0 }, { 0, 5, 0, 1 }, { 2, 1, 3, 10 } };
+		System.out.println(matrixElementsSum(matrix));
 	}
 
+	public static int matrixElementsSum(int[][] matrix) {
+		int sum = 0;
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				if (i == 1 && matrix[i - 1][j] != 0) {
+					sum = sum + matrix[i][j];
+				} else if (i == 2 && matrix[i - 1][j] != 0 && matrix[i - 2][j] != 0) {
+					sum = sum + matrix[i][j];
+				} else if (i == 3 && matrix[i - 1][j] != 0 && matrix[i - 2][j] != 0 && matrix[i - 3][j] != 0) {
+					sum = sum + matrix[i][j];
+				} else if (i == 4 && matrix[i - 1][j] != 0 && matrix[i - 2][j] != 0 && matrix[i - 3][j] != 0 && matrix[i - 4][j] != 0) {
+					sum = sum + matrix[i][j];
+				} else if (i == 5 && matrix[i - 1][j] != 0 && matrix[i - 2][j] != 0 && matrix[i - 3][j] != 0 && matrix[i - 4][j] != 0 && matrix[i - 5][j] != 0) {
+					sum = sum + matrix[i][j];
+				} else if (i == 0) {
+					sum = sum + matrix[i][j];
+				}
+			}
+		}
+		return sum;
+	}
 }
