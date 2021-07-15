@@ -1,2 +1,1 @@
-# codesignal.com
-    [src/codesignal/com](Solve exercises)
+[src/codesignal/com](Solve exercises)
