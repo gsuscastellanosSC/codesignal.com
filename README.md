@@ -1,3 +1,3 @@
 # codesignal.com
-## Link
-  * [Solve exercises](https://app.codesignal.com/) - codesignal
+## Links
+  * [Solve exercises](https://app.codesignal.com/)
