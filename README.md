@@ -1,2 +1,2 @@
 # codesignal.com
-    [Solve exercises](https://app.codesignal.com)
+    [https://app.codesignal.com](Solve exercises)
