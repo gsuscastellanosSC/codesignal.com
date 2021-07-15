@@ -1,2 +1,2 @@
 # codesignal.com
-    [https://app.codesignal.com](Solve exercises)
+    [src/codesignal/com](Solve exercises)
